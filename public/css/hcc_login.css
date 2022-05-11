@@ -1,0 +1,397 @@
+body {
+	background-color: #1C1E1E;
+}
+.section1 {
+	width: 100% ;
+	height: fit-content;
+}
+.section_height {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.container-fluid {
+	height: 100% !important;
+}
+.innersection {
+	width: 90%;
+	margin-top: 40px;
+}
+.picture {
+	height: 10px;
+	width: 142px
+}
+.container-fluid {
+	height: fit-content;
+}
+.telcast {
+	color: #EBEBEB;
+	font-size: 30px;
+	font-family: Stint Ultra Expanded;
+	font-style: Regular;
+	margin-top: -10px;
+	padding-left: 3%;
+}
+.login {
+	color: #EBEBEB;
+	text-decoration: none;
+	font-size: 24px;
+	display: inline-block;
+}
+.start {
+	font-size: 20px;
+	color: #EBEBEB;
+	text-decoration: none;
+}
+hr {
+	color: grey;
+}
+.advertising {
+	margin-top: 50px;
+	padding-left: 15%;
+}
+.div1 {
+	width: 20%;
+	padding-right: 30px;
+}
+.div2 {
+	margin-top: 50px;
+}
+.tv {
+	width: 70%;
+	padding-left: 5%;
+}
+.plan {
+	width: 90%;
+	margin-top: 15%;
+}
+.div3 {
+	padding-left: 5%;
+	margin-top: 60px;
+}
+.play {
+	border:none;
+	width: 70px;
+	height: 70px;
+	background-color: #1C1E1E;
+}
+.play1 {
+	border:none;
+	width: 240px;
+	height: 50px;
+	background-color: #1C1E1E;
+	color: white;
+	font-size: 30px;
+}
+
+.login1 {
+	width: 100%;
+	height: 100%;
+}
+.log-btn {
+	font-size: 100px;
+	font-style:normal;
+	font-family: Six Caps;
+	color:  #EBEBEB;
+	transform: scale(1,4);
+	/*margin-top: 150px;*/
+	font-weight: 500;
+	background-color: #1C1E1E;
+	border:none;
+	width:100%;
+	text-align: center;
+	margin: auto;
+}
+.log-btn:hover {
+		-webkit-text-stroke: 1px #EBEBEB;
+		color: #1C1E1E;
+	}
+.log-btn1 {
+	font-size: 100px;
+	font-style: normal;
+	font-family: Six Caps;
+	color:  #EBEBEB;
+	transform: scale(1,4);
+	margin-top: 150px;
+	font-weight: normal;
+	-webkit-text-stroke: 1px #EBEBEB;
+	color:#1C1E1E ;
+	/*margin-left: -10%;*/
+	background-color: #1C1E1E;
+	border:none;
+	/*margin-left: -30%;*/
+	width:100%;
+	text-align: center;
+	margin: auto;
+}
+.log-btn1:hover {
+		color:  #EBEBEB;
+}
+.vertical-line {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-right: 0.4px solid #EEE8DB;
+	height: 250px;
+	width: 2%;
+}
+.test1 {
+	color: white;
+	font-size: 20px;
+	writing-mode: vertical-lr;
+	height: 200px;
+	width: 10%;
+}
+.telcast_line {
+	height: 100%;
+	padding: auto;
+}
+.email {
+	width: 70%;
+	color:  #EBEBEB;
+	margin-top: 150px;
+	line-height: 1px;
+}
+.welcome {
+	margin-bottom: 100px;
+}
+.email1 {
+	width: 70%;
+	color:  #EBEBEB;
+	margin-top: 50px;
+	line-height: 1px;
+}
+.joe {
+	width: 90%;
+	background-color: #1C1E1E;
+	padding: 15px;
+	border-radius: 40px;
+	border-color: #EBEBEB;
+	color: white;
+}
+.forget {
+	float: right;
+	margin-top: 15px;
+	color:  #EBEBEB;
+	text-decoration: none;
+}
+.login-btn {
+	width: 90%;
+	padding: 25px;
+	border-radius: 40px;
+	margin-top: 10px;
+} 
+.login-btn:hover {
+	background-color: #1C1E1E;
+	color: #EBEBEB;
+	border-color: #EBEBEB;
+}
+.register {
+	font-weight: bold;
+	text-decoration: none;
+}
+.already-p {
+	color: #EBEBEB;
+	letter-spacing: 2px;
+	display: none;
+}
+.already-p1 {
+	color: #EBEBEB;
+	letter-spacing: 2px;
+	display: none;
+	margin-top: -5px;
+}
+.sub {
+	margin-left: 15%;
+	display: none;
+	border-radius: 40px;
+	padding: 10px;
+	width: 100px;
+}
+.inner-signup {
+	width:60%;
+	height: fit-content;
+	color:#EBEBEB;
+	margin-top: 50px; 
+}
+.form-select {
+	padding: 10px;
+	border-radius: 20px;
+}
+.form-control {
+	padding: 10px;
+	border-radius: 20px;
+}
+.signup-btn:hover {
+	background-color: #1C1E1E;
+	color: #EBEBEB;
+	border-color: #EBEBEB;
+}
+
+			
+@media only screen and (max-width: 765px){
+	.telcast {
+		font-size: 20px;
+	}
+	.picture {
+		width: 70px;
+	}
+	.login {
+		font-size: 18px;
+	}
+	.advertising {
+	margin-top: 60px;
+	margin-left: 0;
+    }
+    .start {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+   }
+   .div1 {
+	width: 50%;
+   } 
+   .tv {
+	width: 50%;
+     }
+   .log-p {
+    margin-left: -20%;
+    margin-top: 0px;
+    }
+    .telcast_line {
+    	display: flex;
+    	flex-direction: row !important;
+    }
+    .vertical-line {
+	    border-right: 0px solid #EEE8DB;
+	    border-top: 0.4px solid #EEE8DB;
+	    height: 0;
+		width: 20%;
+		writing-mode: horizontal-tb;
+    }
+    .test1 {
+		color: white;
+		font-size: 20px;
+		writing-mode: horizontal-tb;
+		margin-top: 35px;
+		width: 35%;
+   }
+   .log-btn {
+   	font-size: 60px;
+   }
+   .log-btn1 {
+   	font-size: 60px;
+   }
+}
+/* beast add start */
+.beast_subtitle {
+	color: white;
+}
+.prev_btn {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 200px;
+	padding: 8px;
+}
+.prev_btn:hover{
+	background-color: black;
+	border: 1px solid white;
+	color: white;			
+}
+.next_btn {
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	border-radius: 20px;
+	width: 200px;
+	padding: 8px;
+}
+.next_btn:hover{
+	background-color: white;
+	border: 1px solid white;
+	color: black;
+}
+.beast_input {
+	/* background-color: transparent; */
+	border: none;
+	border-bottom: 1px solid white;
+}
+.item {
+	color: black;
+}
+.btnclose {
+	font-size:32px;
+}
+.beast_tab {
+	color: white;
+}
+.beast_tab:hover {
+	color: black;
+}
+.estimated_panel {
+	background-color: black !important;
+}
+.progress { 
+	position:relative; 
+	width:100%; 
+	border: 1px solid #7F98B2; 
+	padding: 1px; 
+	border-radius: 3px; 
+	margin-top:20px;
+}
+.bar { 
+	background-color: #B4F5B4; 
+	width:0%; 
+	height:50px; 
+	border-radius: 3px; 
+}
+.percent { 
+	position:absolute; 
+	display:inline-block; 
+	top:3px; 
+	left:48%; 
+	color: #7F98B2;
+}
+.form__btn {
+	width: 240px;
+	font-size: 20px;
+	text-align:center;
+	border: 1px solid white;
+	border-radius: 40px;
+	padding: 8px;
+}
+.beast_login_btn {
+	background-color: white;
+	color:black;
+}
+.beast_login_btn:hover {
+	background-color: black;
+	border:1px solid white;
+	color:white;
+}
+.beast_register_btn {
+	background-color: black;
+	border:1px solid white;
+	color:white;
+}
+.beast_register_btn:hover {
+	background-color: white;
+	color:black;
+}
+.section__title {
+	margin-top: 100px;
+	color: white;
+}
+.title {
+	font-size: 20px;
+}
+.button_panel {
+	margin-top: 100px;
+}
+.sign-info {
+	margin-top: 40px;
+}
+/* beast add end */

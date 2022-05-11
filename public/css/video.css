@@ -1,0 +1,39 @@
+.video-js{
+    outline: 1px solid #83be3f !important;
+}
+
+.video-js .vjs-big-play-button{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vjs-modal-dialog .vjs-modal-dialog-content, .video-js .vjs-modal-dialog, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+}
+
+.vjs-menu-content{
+    border-radius: 2px;
+}
+
+.vjs-menu-item:hover{
+    background: #83be3f !important;
+}
+
+.video-js .vjs-progress-holder{
+    height: 1rem !important;
+}
+
+.video-js .vjs-play-progress:before{
+    display: none;
+}
+
+.slick-aerrow-block .slick-arrow{
+    width: 20px !important;
+    height: 20px !important;
+}

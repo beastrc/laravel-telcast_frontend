@@ -1,0 +1,168 @@
+input[type=text] {
+    padding-left: 20px;
+    border-radius: 20px;
+}
+input[type=url] {
+    padding-left: 20px;
+    border-radius: 20px;
+}
+.btn {
+    border:1px solid white !important;
+    border-radius: 20px !important;
+}
+.dropdown-toggle {
+    border:1px solid white !important;
+    border-radius: 20px !important;
+}
+.bs-placeholder {
+    border:1px solid white !important;
+    border-radius: 20px !important;
+}
+.btn-light {
+    border:1px solid white !important;
+    border-radius: 20px !important;
+}
+ .filter-option {
+    border:1px solid white !important;
+    border-radius: 20px !important;
+}
+body{
+    background-color: black !important;
+}
+.dropdown-toggle{
+    height: 40px;
+    width: 400px !important;
+}
+.beast_subtitle {
+    color: white;
+}
+.daily_budget {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+.daily_budget:focus{
+    outline: none;
+}
+.prev_btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    padding: 8px;
+}
+.prev_btn:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: white;			
+}
+.next_btn {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    padding: 8px;
+}
+.next_btn:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.slider {
+    background: linear-gradient(to right, white 0%, white 25%, #1C1E1E 25%, #1C1E1E 100%);
+    border-radius: 10px;
+    height: 18px;
+    width: 40%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    margin-top: 26px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    border: white 5px solid;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: black 5px solid;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+.beast_est_week_per {
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.danger-bar {
+    background-color: #565050 !important;
+}
+.section_title{
+    color: white;
+    font-size: 48px;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.title {
+    padding-left: 120px;
+    color: white;
+    font-size: 20px;
+}
+.button_panel {
+    margin-top: 60px;
+
+}
+.form__btn {
+    width: 240px;
+    font-size: 20px;
+    text-align:center;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 8px;
+    text-decoration: none !important;
+}
+.beast_login_btn {
+    background-color: white;
+    color:black;
+}
+.beast_login_btn:hover {
+    background-color: black;
+    border:1px solid white;
+    color:white;
+}
+.beast_register_btn {
+    margin-left: 40px;
+    background-color: black;
+    border:1px solid white;
+    color:white;
+}
+.beast_register_btn:hover {
+    background-color: white;
+    color:black;
+}
+.campaign_a {
+    color: white !important;
+    text-decoration: none !important;
+}
+.beast_tab {
+    color: white;
+}
+.beast_tab:hover {
+    color: white;
+}

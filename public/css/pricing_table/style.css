@@ -1,0 +1,382 @@
+/* -------------------------------------------------------------------
+ * Plugin Name           : Collyshefra - Responsive Modern Pricing Table
+ * Author Name           : Yucel Yilmaz
+ * Author URI            : https://codecanyon.net/user/aip_theme3434
+ * Created Date          : 28 January 2020
+ * Version               : 1.0
+ * File Name             : style.css
+------------------------------------------------------------------- */
+/* -------------------------------------------------------------------
+   Base                               
+   ------------------------ /
+ * 01.Base
+ * 02.Typography
+ * 03.Helper Class
+   ------------------------ /
+   Components                               
+   ------------------------ /
+ * 04.Buttons  
+   ------------------------ /
+   Layout                               
+   ------------------------ /
+ * 05.Pricing
+ * 06.Footer
+ */
+/* ---------------------------------------------------------------- */
+/* 01.Base                               
+/* ---------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	font-family: "Roboto-Regular", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #677294;
+}
+
+a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: #677294;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+textarea, textarea:focus, input, input:focus, button, button:focus {
+	resize: inherit;
+	outline: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* 02.Typography                                                  
+/* ---------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Poppins-Bold", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1.3;
+	margin: 0;
+	text-transform: capitalize;
+	color: #000;
+}
+
+h1, .h1 {
+	font-size: 55px;
+}
+
+h2, .h2 {
+	font-size: 42px;
+}
+
+h3, .h3 {
+	font-size: 44px;
+}
+
+.price-text h4, .h4 {
+	font-size: 1.7rem !important;
+	font-weight: bold !important;
+}
+
+h5, .h5 {
+	font-size: 18px;
+}
+
+h6, .h6 {
+	font-size: 16px;
+}
+
+p {
+	line-height: 28px;
+	margin: 0;
+	color: #677294;
+}
+
+/* ---------------------------------------------------------------- */
+/* 03.Helper Class                                                  
+/* ---------------------------------------------------------------- */
+.section {
+	padding: 80px 0;
+}
+
+.section-heading .section-title {
+	position: relative;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.section-heading .section-title:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 50px;
+	height: 4px;
+	content: "";
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: #26C281;
+}
+
+.pb-minus-70 {
+	padding-bottom: 70px;
+}
+
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                   
+/* ---------------------------------------------------------------- */
+.default-button {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 20px 40px;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	text-align: center;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #26C281;
+}
+
+.default-button:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+	content: "";
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	-webkit-animation: ripple 1s;
+	animation: ripple 1s;
+	opacity: 0;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.247);
+}
+
+.default-button:focus:not(:active)::after {
+	display: block;
+}
+
+@-webkit-keyframes ripple {
+	from {
+		opacity: 1;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: scale(10);
+		transform: scale(10);
+	}
+}
+
+@keyframes ripple {
+	from {
+		opacity: 1;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: scale(10);
+		transform: scale(10);
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* 05.Pricing                           
+/* ---------------------------------------------------------------- */
+.price-toggle-wrap {
+	display: inline-block;
+	margin: 0 auto 60px auto;
+	padding: 10px;
+	text-align: center;
+	border-radius: 100px;
+	-webkit-box-shadow: 0 10px 28px 0 rgba(61, 82, 96, 0.15);
+	box-shadow: 0 10px 28px 0 rgba(61, 82, 96, 0.15);
+}
+
+.price-toggle-wrap a {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+	padding: 16px 40px;
+	-webkit-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	color: #26C281 !important;
+	border-radius: 100px;
+	background-color: #e7fbf4;
+	background-position: center;
+}
+
+.price-toggle-wrap a.active {
+	color: #FFFFFF !important;
+	background: #26C281;
+	background-position: center;
+}
+
+.pricing-tab-toggle-content {
+	display: none;
+}
+
+.pricing-tab-toggle-content.active {
+	display: block;
+}
+
+.price-table {
+	padding: 30px;
+	-webkit-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	text-align: center;
+	border-radius: 1.2rem;
+	-webkit-box-shadow: 0 10px 20px 0 rgba(61, 82, 96, 0.15);
+	box-shadow: 0 10px 20px 0 rgba(61, 82, 96, 0.15);
+}
+
+.price-table:hover {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	-webkit-box-shadow: 0 23px 49px 0 rgba(61, 82, 96, 0.15);
+	box-shadow: 0 23px 49px 0 rgba(61, 82, 96, 0.15);
+}
+
+.price-table .price-icon {
+	display: inline-block;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	color: white;
+	border-radius: 50%;
+	background: #26C281;
+}
+
+.price-table .price-icon i {
+	font-size: 40px;
+	line-height: 100px;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	background: #26C281;
+}
+
+.price-table .price-value {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.price-table .price-value span {
+	font-size: 1rem;
+	text-align: right;
+}
+
+.price-table .price-value sup {
+	font-size: 1.5rem;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+	text-decoration: line-through;
+}
+
+.price-table .price-value b {
+	font-family: "Poppins-Bold", sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #050626;
+}
+
+.price-table .price-text {
+	margin-bottom: 30px;
+}
+
+.price-table .price-text span {
+	display: inline-block;
+	padding: 11px 40px;
+	text-align: center;
+	border-radius: 100px;
+}
+
+.price-table .price-list li {
+	margin-top: 15px;
+}
+
+.price-table .price-list li:first-child {
+	margin-top: 0;
+}
+
+.price-table .price-footer {
+	margin-top: 30px;
+}
+
+.price-table .price-footer .price-block-btn {
+	display: block;
+	letter-spacing: 2px;
+	color: #fff;
+	border-radius: 50px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+	.price-table-resp:nth-child(3) {
+		margin-top: 30px;
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 767.98px) {
+	.price-table-resp {
+		margin-top: 30px;
+	}
+	
+	.price-table-resp:first-child {
+		margin-top: 0;
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+/* Size reduced because it does not fit on this device
+ * Extra small devices (Iphone 5, less than 320px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+	.price-toggle-wrap a {
+		padding: 16px 25px;
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* 06.Footer                                                   
+/* ---------------------------------------------------------------- */
+.footer {
+	background: #050626;
+}
+
+.footer .copyright-wrap {
+	padding: 30px;
+}
+
+.footer .copyright-wrap .copyright-inner .copyright-text {
+	text-align: center;
+	opacity: 0.85;
+	color: #fff;
+}
